@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function ServerSidePage({ timestamp, randomNumber, userAgent }) {
   return (
@@ -12,7 +13,7 @@ export default function ServerSidePage({ timestamp, randomNumber, userAgent }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Exemplo de <a href="https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props">getServerSideProps</a>
+          Exemplo de <Link href="https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props">getServerSideProps</Link>
         </h1>
 
         <p className={styles.description}>
@@ -50,12 +51,12 @@ export default function ServerSidePage({ timestamp, randomNumber, userAgent }) {
         </div>
 
         <div style={{ marginTop: '2rem' }}>
-          <a href="/" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
+          <Link href="/" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
             ← Voltar para Home
-          </a>
-          <a href="/static" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
+          </Link>
+          <Link href="/static" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
             Ver exemplo getStaticProps →
-          </a>
+          </Link>
         </div>
       </main>
     </div>

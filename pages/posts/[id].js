@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from '../../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Post({ post, buildTime }) {
   const router = useRouter()
@@ -64,12 +65,12 @@ export default function Post({ post, buildTime }) {
         </div>
 
         <div style={{ marginTop: '2rem' }}>
-          <a href="/" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
+          <Link href="/" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
             ← Voltar para Home
-          </a>
-          <a href="/posts" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
+          </Link>
+          <Link href="/posts" className={styles.card} style={{ display: 'inline-block', margin: '0 1rem' }}>
             Ver todos os posts →
-          </a>
+          </Link>
         </div>
       </main>
     </div>

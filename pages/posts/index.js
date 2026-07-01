@@ -40,9 +40,9 @@ export default function PostsIndex({ posts, buildTime }) {
         </div>
 
         <div style={{ marginTop: '2rem' }}>
-          <a href="/" className={styles.card} style={{ display: 'inline-block' }}>
+          <Link href="/" className={styles.card} style={{ display: 'inline-block' }}>
             ← Voltar para Home
-          </a>
+          </Link>
         </div>
       </main>
     </div>

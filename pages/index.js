@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <Link href="https://nextjs.org">Next.js!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -21,25 +22,25 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/server-side" className={styles.card}>
+          <Link href="/server-side" className={styles.card}>
             <h2>getServerSideProps &rarr;</h2>
             <p>Exemplo de Server-Side Rendering (SSR) com dados dinâmicos.</p>
-          </a>
+          </Link>
 
-          <a href="/static" className={styles.card}>
+          <Link href="/static" className={styles.card}>
             <h2>getStaticProps &rarr;</h2>
             <p>Exemplo de Static Site Generation (SSG) com dados estáticos.</p>
-          </a>
+          </Link>
 
-          <a href="/posts" className={styles.card}>
+          <Link href="/posts" className={styles.card}>
             <h2>getStaticPaths &rarr;</h2>
             <p>Páginas dinâmicas com getStaticProps + getStaticPaths.</p>
-          </a>
+          </Link>
 
-          <a href="/isr-example" className={styles.card}>
+          <Link href="/isr-example" className={styles.card}>
             <h2>ISR - Revalidação &rarr;</h2>
             <p>Incremental Static Regeneration com revalidação automática.</p>
-          </a>
+          </Link>
         </div>
 
         <div style={{ marginTop: '3rem', maxWidth: '800px' }}>
@@ -70,7 +71,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
+        <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -79,7 +80,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </Link>
       </footer>
     </div>
   )
